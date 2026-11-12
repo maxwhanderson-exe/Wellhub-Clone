@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- CABEÇALHO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="32dp"
+        android:paddingTop="28dp"
+        android:background="@color/background">
+
+        <!-- Logotipo e histórico -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="✺"
+                android:textSize="48sp"
+                android:textColor="@color/preto"/>
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="◴"
+                android:textSize="27sp"
+                android:textColor="@color/preto"
+                android:background="@drawable/bg_historico"/>
+
+        </LinearLayout>
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_checkin"
+            android:textColor="@color/preto"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+    <!-- CONTEÚDO COM ROLAGEM -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:background="@color/branco"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="48dp"
+            android:paddingBottom="24dp">
+
+            <!-- TÍTULO DAS ACADEMIAS -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_academias"
+                android:textColor="@color/preto"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginHorizontal="32dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitulo_academias"
+                android:textColor="@color/cinza"
+                android:textSize="17sp"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- CARROSSEL DE ACADEMIAS -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:scrollbars="none"
+                android:layout_marginTop="48dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp">
+
+                    <include
+                        layout="@layout/item_academia"
+                        android:id="@+id/academia_1"
+                        android:layout_width="290dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"/>
+
+                    <include
+                        layout="@layout/item_academia"
+                        android:id="@+id/academia_2"
+                        android:layout_width="290dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"/>
+
+                    <include
+                        layout="@layout/item_academia"
+                        android:id="@+id/academia_3"
+                        android:layout_width="290dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <!-- SEPARADOR -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cinza_claro"
+                android:layout_marginTop="70dp"/>
+
+            <!-- AGENDA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titulo_agenda"
+                    android:textColor="@color/preto"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subtitulo_agenda"
+                    android:textColor="@color/cinza"
+                    android:textSize="17sp"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- NAVEGAÇÃO INFERIOR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/branco">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="♥\nCheck-in"
+            android:textColor="@color/rosa"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="⌕\nExplorar"
+            android:textColor="@color/cinza"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="♙\nPerfil"
+            android:textColor="@color/cinza"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="☆\nWellhub AI"
+            android:textColor="@color/cinza"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

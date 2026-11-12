@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="355dp"
+    android:background="@color/preto">
+
+    <!-- Imagem da academia -->
+    <ImageView
+        android:id="@+id/img_academia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="#555555"
+        android:contentDescription="Imagem da academia"/>
+
+    <!-- Camada escura sobre a imagem -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000"/>
+
+    <!-- Conteúdo do cartão -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/txt_nome_academia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/academia_arena"
+            android:textColor="@color/branco"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_distancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="290 m"
+            android:textColor="@color/branco"
+            android:textSize="15sp"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/btn_checkin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/botao_checkin"
+            android:textColor="@color/branco"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="@color/rosa"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Clone Wellhub</string>
+    <string name="titulo_checkin">Check-in</string>
+    <string name="titulo_academias">Tudo pronto para fazer check-in?</string>
+    <string name="subtitulo_academias">Academias e estúdios perto de você</string>
+    <string name="titulo_agenda">Agenda</string>
+    <string name="subtitulo_agenda">Atividades reservadas</string>
+    <string name="academia_arena">Arena Top Fitness</string>
+    <string name="academia_box">Box075</string>
+    <string name="academia_clinica">Clínica Corpo</string>
+    <string name="botao_checkin">Check-in</string>
+    <string name="reservar_aula">Reservar uma aula</string>
+
+</resources>
