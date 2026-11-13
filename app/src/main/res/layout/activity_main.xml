@@ -105,22 +105,22 @@
                     <include
                         layout="@layout/item_academia"
                         android:id="@+id/academia_1"
-                        android:layout_width="290dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="190dp"
+                        android:layout_height="250dp"
                         android:layout_marginStart="12dp"/>
 
                     <include
                         layout="@layout/item_academia"
                         android:id="@+id/academia_2"
-                        android:layout_width="290dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="190dp"
+                        android:layout_height="250dp"
                         android:layout_marginStart="12dp"/>
 
                     <include
                         layout="@layout/item_academia"
                         android:id="@+id/academia_3"
-                        android:layout_width="290dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="190dp"
+                        android:layout_height="250dp"
                         android:layout_marginStart="12dp"/>
 
                 </LinearLayout>
